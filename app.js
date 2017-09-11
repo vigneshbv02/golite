@@ -31,7 +31,12 @@ io.on("connection",function(socket)
 });
 
 
+app.get('\\',function(req,res){
+    res.send("<marquee>GoLite is online</marquee>");
+});
+
 
 var server=app.listen(process.env.PORT || 5000,function(){
     console.log("server running in port "+(process.env.PORT || 5000));
 });
+
