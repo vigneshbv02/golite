@@ -21,18 +21,18 @@ io.on("connection",function(socket)
 
 
     socket.on("message_full",function(){
-        io.sockets.emit("notify",{message:"groceryis full"});
+        io.sockets.emit("notify",{message:"grocery is full"});
     })
 
 
     socket.on("message_low",function(){
-        io.sockets.emit("notify",{message:"groceryis level is low"});
+        io.sockets.emit("notify",{message:"grocery is level is low"});
     })
 });
 
 
 app.get('/',function(req,res){
-    res.send("<marquee>GoLite is online</marquee>");
+    res.send("<marquee>GoLite is online By vivek and his team</marquee>");
 });
 
 
