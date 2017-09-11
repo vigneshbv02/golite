@@ -19,7 +19,7 @@ io.on("connection",function(socket)
 {
     console.log("A user connected:" + socket.id);
 
-    io.sockets.emit("notify",{message:"Welcome to Golite"});
+    socket.emit("notify",{message:"Welcome to Golite"});
 
     socket.on("message_full",function(){
         io.sockets.emit("notify",{message:"grocery is full"});
