@@ -31,7 +31,7 @@ io.on("connection",function(socket)
 });
 
 
-app.get('\\',function(req,res){
+app.get('/',function(req,res){
     res.send("<marquee>GoLite is online</marquee>");
 });
 
