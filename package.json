@@ -1,0 +1,14 @@
+{
+  "name": "golite",
+  "version": "0.0.1",
+  "author": "vivek",
+  "license": "VIT",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
+  }
+}
