@@ -19,15 +19,15 @@ io.on("connection",function(socket)
 {
     console.log("A user connected:" + socket.id);
 
-    socket.emit("notify",{message:"Welcome to Golite"});
+    socket.emit("notify",{'message':"Welcome to Golite"});
 
     socket.on("message_full",function(){
-        io.sockets.emit("notify",{message:"grocery is full"});
+        io.sockets.emit("notify",{'message':"grocery is full"});
     })
 
 
     socket.on("message_low",function(){
-        io.sockets.emit("notify",{message:"grocery is level is low"});
+        io.sockets.emit("notify",{'message':"grocery is level is low"});
     })
 });
 
