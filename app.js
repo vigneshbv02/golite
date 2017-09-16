@@ -49,7 +49,7 @@ var option={
     keepalive:10,
     clientId:'coordinator',
     port:1883,
-    host:'http://localhost:8000',
+    host:'http://golite.herokuapp.com',
     will: {
         topic: 'WillMsg',
         payload: 'Connection Closed abnormally..!',
@@ -58,7 +58,7 @@ var option={
     }
 }
 
-var client=mqtt.connect('tcp://golite.herokuapp.com:1883',option);
+var client=mqtt.connect('tcp://localhost:1883',option);
 
 
 client.on("connect",function(){
