@@ -129,18 +129,6 @@ io.on("connection",function(socket)
 
     socket.emit("notify",{'message':"Welcome to Golite"});
 
-    socket.on("message_full",function(){
-        io.to('room-golite').emit('notify',{'message':"grocery level is full"});
-        //io.sockets.emit("notify",{'message':"grocery is full"});
-    });
-
-
-    socket.on("message_low",function(){
-        io.to('room-golite').emit('notify',{'message':"grocery level is low"});
-        //io.sockets.emit("notify",{'message':"grocery is level is low"});
-    });
-
-
 });
 
 
