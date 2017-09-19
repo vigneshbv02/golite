@@ -5,7 +5,7 @@ var bodyparser=require("body-parser");
 var http=require('http').Server(app);
 var io=require('socket.io')(http);
 
-var mqtt=require('mqtt');
+/*var mqtt=require('mqtt');
 var broker=require('mosca');
 
 var settings={
@@ -63,34 +63,16 @@ var client=mqtt.connect('tcp://localhost:1883',option);
 
 client.on("connect",function(){
 
-    /*setInterval(function(){
+    setInterval(function(){
      client.publish('intopic','hi every one',function(){
      console.log("published");
      });
 
-     },10000);*/
-
-
-    client.subscribe('/status');
+     },10000);
 
 
 
 
-    /*    client.subscribe('fire_fighter/kitchen/status');
-        client.subscribe('doorlock/front/status');
-        client.subscribe('house_hold/living/status');
-        client.subscribe('thor/8754623583/status');
-
-
-
-        client.subscribe('fire_fighter/kitchen/msg');
-        client.subscribe('doorlock/front/msg');
-        client.subscribe('house_hold/living/msg');
-        client.subscribe('thor/8754623583/msg');
-        client.subscribe('device/disconnect');
-
-
-    */
 
 
     client.on('message',function(topic,message){
@@ -106,7 +88,7 @@ client.on("connect",function(){
 });
 
 
-
+*/
 
 
 
