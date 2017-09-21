@@ -32,11 +32,15 @@ app.get('/',function(req,res){
 });
 app.get('/high',function(req,res){
     console.log("high");
+    io.to("room-golite").emit('notify',{'message':"Grocery level is HIGH"});
     res.send("done");
 })
 
+
+
 app.get('/low',function(req,res){
     console.log("low");
+    io.to("room-golite").emit('notify',{'message':"Grocery level is LOW"});
     res.send("done");
 })
 
