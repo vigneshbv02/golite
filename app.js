@@ -41,7 +41,7 @@ app.get('/low',function(req,res){
 })
 
 
-var server=app.listen(process.env.PORT || 5000,function(){
+var server=http.listen(process.env.PORT || 5000,function(){
     console.log("server running in port "+(process.env.PORT || 5000));
 });
 
