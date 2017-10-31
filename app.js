@@ -45,7 +45,7 @@ app.get('/low',function(req,res){
 
 app.get("/data",function (req,res) {
 
-    data=req.param.data;
+    data=req.query.data;
 console.log("storage");
 console.log(data);
 });
