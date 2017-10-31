@@ -46,6 +46,7 @@ app.get('/low',function(req,res){
 app.get("/data",function (req,res) {
 
     data=req.query.data;
+    temp=req.query.t;
 console.log("storage");
 console.log(data);
 });
