@@ -49,6 +49,7 @@ app.get("/data",function (req,res) {
     temp=req.query.t;
 console.log("storage");
 console.log(data);
+res.send("done");
 });
 
 app.post("/datatum",function(req,res){
