@@ -52,7 +52,7 @@ console.log(data);
 res.send("done");
 });
 
-app.post("/datatum",function(req,res){
+app.post("/datum",function(req,res){
    var d={
        result:{
            storage:data,
